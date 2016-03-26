@@ -12,6 +12,7 @@
 		9EF04A341CA6E0B900E43184 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF04A321CA6E0B900E43184 /* Document.xib */; };
 		9EF04A361CA6E0B900E43184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF04A351CA6E0B900E43184 /* Assets.xcassets */; };
 		9EF04A391CA6E0B900E43184 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EF04A371CA6E0B900E43184 /* MainMenu.xib */; };
+		9EF04A411CA6E60600E43184 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF04A401CA6E60600E43184 /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9EF04A351CA6E0B900E43184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EF04A381CA6E0B900E43184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9EF04A3A1CA6E0B900E43184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF04A401CA6E60600E43184 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9EF04A351CA6E0B900E43184 /* Assets.xcassets */,
 				9EF04A371CA6E0B900E43184 /* MainMenu.xib */,
 				9EF04A3A1CA6E0B900E43184 /* Info.plist */,
+				9EF04A401CA6E60600E43184 /* Employee.swift */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF04A311CA6E0B900E43184 /* Document.swift in Sources */,
+				9EF04A411CA6E60600E43184 /* Employee.swift in Sources */,
 				9EF04A2F1CA6E0B900E43184 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				9EF04A3F1CA6E0B900E43184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
