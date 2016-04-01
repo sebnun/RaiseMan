@@ -102,6 +102,29 @@ class Document: NSDocument, NSWindowDelegate {
         tableView.editColumn(0, row: row, withEvent: nil, select: true)
     }
     
+    @IBAction func removeEmployees(sender: NSButton) {
+        
+        let selectedPeople: [Employee] = arrayController.selectedObjects as! [Employee]
+        
+        let alert = NSAlert()
+        alert.messageText = "Do you really want to remove these people?"
+        alert.informativeText = "\(selectedPeople.count) people will be removed"
+        alert.addButtonWithTitle("Remove")
+        alert.addButtonWithTitle("Cancel")
+        
+        let window = sender.window!
+        
+        alert.beginSheetModalForWindow(window) { (response) in
+            
+            switch response {
+            case NSAlertFirstButtonReturn:
+                self.arrayController.remove(nil)
+            default:
+                break
+            }
+        }
+    }
+    
     //MARK: - Accessors
     
     func insertObject(employee: Employee, inEmployeesAtIndex index: Int) {

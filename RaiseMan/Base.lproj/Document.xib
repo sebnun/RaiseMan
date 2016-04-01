@@ -40,7 +40,7 @@
                             <rect key="frame" x="1" y="0.0" width="342" height="134"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="2vY-nl-jjl" viewBased="YES" id="xF2-dg-tgf">
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="2vY-nl-jjl" viewBased="YES" id="xF2-dg-tgf">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="111"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
@@ -157,7 +157,7 @@
                             <string key="keyEquivalent"></string>
                         </buttonCell>
                         <connections>
-                            <action selector="remove:" target="O6Q-2t-IGd" id="aGs-jc-ns6"/>
+                            <action selector="removeEmployees:" target="-2" id="1Zz-IY-g75"/>
                             <binding destination="O6Q-2t-IGd" name="enabled" keyPath="canRemove" id="lbP-9k-oqm"/>
                         </connections>
                     </button>
