@@ -8,8 +8,6 @@
 
 import Cocoa
 
-import Cocoa
-
 private var KVOContext: Int = 0
 
 class Document: NSDocument, NSWindowDelegate {
@@ -197,6 +195,13 @@ class Document: NSDocument, NSWindowDelegate {
     override func readFromData(data: NSData, ofType typeName: String) throws {
         print("About to read data of type \(typeName).");
         employees = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Employee]
+    }
+    
+    override func printOperationWithSettings(printSettings: [String : AnyObject]) throws -> NSPrintOperation {
+        let employeesPrintingView = EmployeesPrintingView(employees: employees)
+        let printInfo: NSPrintInfo = self.printInfo
+        let printOperation = NSPrintOperation(view: employeesPrintingView, printInfo: printInfo)
+        return printOperation
     }
     
     // MARK: - NSWindowDelegate
